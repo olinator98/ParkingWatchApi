@@ -1,14 +1,14 @@
 # ParkingWatchApi
 
 The Parkingwatch API handles all the requests from the Webapp and the parkingwatches. It allows the a communication between the parkingwatch and a webapp. This API is running on a node.js server
-# API Definition
+### API Definition
 The API can handle all the following requests
     - list all parkingwatches
     - create a parkingwatch
     - get a specific parkingwatch by id
     - update a parkingwatch
     - delete parkingwatch
-# Model
+### Model
 
 ```
   name: {
@@ -45,3 +45,16 @@ The API can handle 5 request. Most of them need the id as parameter
 |GET | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId |-| specific parkingwatch|get all of a specific parkingwatch| 
 |PUT | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId| value to update (name, settedDate, status)| -|Update method|
 |DELETE | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId |- |status of the delete |deleting a dataset|  
+
+## Database
+I used a MongoDB for this project. To connect to the database from Node.js, I used mongoose. 
+
+The database is hosted by Google. I used mlab to do this. The connect statement is in the server.js file
+´´´
+mongoose.connect('mongodb://admin:3edc4rfv@ds163870.mlab.com:63870/rest_api_to_test');
+´´´
+
+https://mlab.com/databases/rest_api_to_test#collections
+
+# Important
+To realise this API, I've to look at the tutorial at https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd

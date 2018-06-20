@@ -9,6 +9,7 @@ The API can handle all the following requests
     - update a parkingwatch
     - delete parkingwatch
 # Model
+
 ```
   name: {
     type: String,
@@ -27,10 +28,14 @@ The API can handle all the following requests
   }
 }
 ```
+
 ### Installation
-This server requires the node-modules to run. You need to install ``` npm install npm start ```
+This server requires the node-modules to run. You need to install 
+``` npm install npm start ```
+
 ### Requests
 The API can handle 5 request. Most of them need the id as parameter
+
 | Request Type | Request | data | Response | Notes |
 | ------ | ------ |------ |------ |------ |
 | GET | http://hauslaerche.internet-box.ch:3000/parkingwatch/ | - | All of the db| all datasets| POST | 

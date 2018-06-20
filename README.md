@@ -31,7 +31,9 @@ The API can handle all the following requests
 
 ### Installation
 This server requires the node-modules to run. You need to install 
-``` npm install npm start ```
+``` npm install ```
+
+```npm start ```
 
 ### Requests
 The API can handle 5 request. Most of them need the id as parameter

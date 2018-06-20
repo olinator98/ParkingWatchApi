@@ -41,5 +41,5 @@ The API can handle 5 request. Most of them need the id as parameter
 | GET | http://hauslaerche.internet-box.ch:3000/parkingwatch/ | - | All of the db| all datasets| 
 |POST| http://hauslaerche.internet-box.ch:3000/parkingwatch/ | name | none | creating a new dataset| 
 |GET | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId |-| specific parkingwatch|get all of a specific parkingwatch| 
-|PUT | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId| value to update (name, settedDate, status)| -|
-|Update method|DELETE | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId |- |status of the delete |deleting a dataset|  
+|PUT | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId| value to update (name, settedDate, status)| -|Update method|
+|DELETE | http://hauslaerche.internet-box.ch:3000/parkingwatch/taskId |- |status of the delete |deleting a dataset|  
